@@ -1,0 +1,10 @@
+{
+    "imports": {
+      "@cliffy/command": "jsr:@cliffy/command@^1.0.0-rc.7",
+      "@std/path": "jsr:@std/path@^1.0.8"
+    },
+    "tasks": {
+        "save": "deno --allow-run --allow-env --allow-write --allow-read blutilx.ts save-state -p -c -f ./state.json",
+        "load": "deno --allow-run --allow-env --allow-write --allow-read blutilx.ts restore-state -p -c -f ./state.json -k"
+    }
+}
